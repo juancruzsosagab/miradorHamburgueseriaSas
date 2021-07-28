@@ -1,0 +1,101 @@
+/* ----- styles index -----*/
+
+
+.allSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main__backgroundImg{
+    height: 100vh;
+    background-image: url(../img/hamburguesa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  
+  .main__titles {
+    position: absolute;
+    width: 70vh;
+    text-align: center;
+  }
+  
+  h1, h3 {
+    transform: matrix(1, -0.20, 0, 1, 0, 0);
+    -ms-transform: matrix(1, -0.20, 0, 1, 0, 0);
+    -webkit-transform: matrix(1, -0.20, 0, 1, 0, 0);
+    color: #111;
+  }
+  
+  h1 {
+    font-family: "Oswald", Sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 4.375rem;
+    text-shadow: 1px 2px #e6e6d8, 3px 4px #c6a39a;
+    span{
+        display: inline-block;
+        vertical-align: middle;
+
+    }
+  }
+  
+  span.star {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-family: "Open Sans", Sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;  
+    position: relative;
+        &:before, &:after{
+            content: " ";
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            border-top: 2px solid #121212;
+            border-bottom: 2px solid #121212;
+          }
+          &:before{
+            margin: 9px 0 0 -110px;
+          }
+          &:after {
+            margin: 9px 0 0 10px;
+          }  
+  }
+ 
+  #primaryHome{
+    background: #e6e6d8 url('https://dl.dropboxusercontent.com/s/t0gu051d08sei65/bg-retro-noise.png');
+    color: #121212;
+    height: 30vh;
+    width: auto;
+    background-color: white;
+    color: black;
+    font: bold;
+    text-align: center;
+        h2:before, h2:after{
+            border-top: 0px;
+            border-bottom: 0px;
+          }
+  }
+ 
+  #secondaryHome__video{
+   padding: 40px;
+   border: 10px;
+   width: 40vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+  
+  #secondaryHome__text{
+  @extend #secondaryHome__video;
+    text-align: center;
+   }
+   
+  

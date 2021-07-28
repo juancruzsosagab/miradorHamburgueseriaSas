@@ -1,0 +1,556 @@
+@charset "UTF-8";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+/* fontawesome */
+[class*=fontawesome-]:before {
+  font-family: "FontAwesome", sans-serif;
+}
+
+/* ---- CSS ---- */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  background-image: url("../img/fondo-menu.png");
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.titulos-sections {
+  width: 100%;
+}
+
+h2 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+h2:before, h2:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 5px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+h2:before {
+  margin: 9px 0 0 -110px;
+}
+h2:after {
+  margin: 9px 0 0 10px;
+}
+
+/* ----- header -----*/
+header {
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  background: black !important;
+  color: white;
+  box-shadow: 0px 0px 10px gray;
+  padding: 1rem 0;
+  border-radius: 0.2rem;
+  /*alternativa al border border-radius: 0.2rem;*/
+}
+
+.navbar-brand {
+  margin-left: 2rem;
+}
+
+.navbar-nav:last-child {
+  color: #111;
+}
+
+.nav-item {
+  margin-right: 2rem;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+  color: orange;
+}
+
+.navbar-nav:last-child .nav-item.active:last-child .nav-link:last-child,
+.navbar-nav:last-child .nav-item:hover:last-child .nav-link:last-child {
+  color: orange;
+}
+
+.nav__btn {
+  color: #111 !important;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* ----- footer-----*/
+footer {
+  box-shadow: 0px 0px 10px gray;
+  text-align: center;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+.btn-social:hover {
+  background-color: #ab6412;
+}
+
+/* ----- útiles-----*/
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-orange {
+  color: #ab6412 !important;
+  font-weight: bold;
+}
+
+.font-black {
+  color: black !important;
+}
+
+.fondo-estrellas {
+  background-image: url("../img/fondo-menu.png");
+}
+
+.font-underline {
+  text-decoration: underline;
+}
+
+/* ----- útiles-----*/
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font-orange {
+  color: #ab6412 !important;
+  font-weight: bold;
+}
+
+.font-black {
+  color: black !important;
+}
+
+.fondo-estrellas {
+  background-image: url("../img/fondo-menu.png");
+}
+
+.font-underline {
+  text-decoration: underline;
+}
+
+/* ----- styles index -----*/
+.allSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__backgroundImg {
+  height: 100vh;
+  background-image: url(../img/hamburguesa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__titles {
+  position: absolute;
+  width: 70vh;
+  text-align: center;
+}
+
+h1, h3 {
+  transform: matrix(1, -0.2, 0, 1, 0, 0);
+  -ms-transform: matrix(1, -0.2, 0, 1, 0, 0);
+  -webkit-transform: matrix(1, -0.2, 0, 1, 0, 0);
+  color: #111;
+}
+
+h1 {
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4.375rem;
+  text-shadow: 1px 2px #e6e6d8, 3px 4px #c6a39a;
+}
+h1 span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+span.star {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  position: relative;
+}
+h3:before, h3:after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  border-top: 2px solid #121212;
+  border-bottom: 2px solid #121212;
+}
+h3:before {
+  margin: 9px 0 0 -110px;
+}
+h3:after {
+  margin: 9px 0 0 10px;
+}
+
+#primaryHome {
+  background: #e6e6d8 url("https://dl.dropboxusercontent.com/s/t0gu051d08sei65/bg-retro-noise.png");
+  color: #121212;
+  height: 30vh;
+  width: auto;
+  background-color: white;
+  color: black;
+  font: bold;
+  text-align: center;
+}
+#primaryHome h2:before, #primaryHome h2:after {
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+#secondaryHome__video, #secondaryHome__text {
+  padding: 40px;
+  border: 10px;
+  width: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#secondaryHome__text {
+  text-align: center;
+}
+
+/* ----- styles hamburguesas -----*/
+#principalHamburguesas {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-hamburguesas {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.hamburguesas-contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px;
+}
+
+.cards__img {
+  width: 80%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  transition: all 2s;
+}
+.cards__img:hover {
+  width: 100%;
+  height: auto;
+}
+
+.cards__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 16px;
+  line-height: 20px;
+}
+.cards__text li {
+  list-style-type: none;
+}
+
+.cards__btn {
+  font-weight: bold;
+  font-size: 1rem;
+  background: orange;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.cards__btn:hover {
+  background: #ab6412;
+}
+
+/* ----- styles menú -----*/
+#principalMenu {
+  margin: 30px;
+}
+#principalMenu h2 {
+  margin: 20px;
+  text-align: center;
+}
+#principalMenu table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#principalMenu td, #principalMenu th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+#principalMenu ul {
+  list-style-type: none;
+}
+
+#hambur-menu {
+  width: auto;
+  height: 200px;
+}
+
+.menuContainter {
+  display: grid;
+  grid-template-areas: "imagen imagen imagen imagen" "hamburguesas simple doble triple" "hamburguesas-cheese simple-cheese doble-cheese triple-cheese" "hamburguesas-americana simple-americana doble-americana triple-americana" "hamburguesas-triple simple-triple doble-triple triple-triple" "info info info info";
+  grid-template-rows: 300px 50px 100px 100px 100px 200px;
+  grid-template-columns: 40% 20% 20% 20%;
+  align-items: center;
+  justify-items: center;
+}
+
+.menuContainter__img {
+  grid-area: imagen;
+  justify-self: center;
+}
+
+.menuContainter__hamburguesas {
+  grid-area: hamburguesas;
+  justify-self: start;
+}
+
+.menuContainter__simple {
+  grid-area: simple;
+}
+
+.menuContainter__doble {
+  grid-area: doble;
+}
+
+.menuContainter__triple {
+  grid-area: triple;
+}
+
+.menuContainter__hamburguesas-cheese {
+  grid-area: hamburguesas-cheese;
+  justify-self: start;
+}
+
+.menuContainter__simple-cheese {
+  grid-area: simple-cheese;
+}
+
+.menuContainter__doble-cheese {
+  grid-area: doble-cheese;
+}
+
+.menuContainter__triple-cheese {
+  grid-area: triple-cheese;
+}
+
+.menuContainter__hamburguesas-americana {
+  grid-area: hamburguesas-americana;
+  justify-self: start;
+}
+
+.menuContainter__simple-americana {
+  grid-area: simple-americana;
+}
+
+.menuContainter__doble-americana {
+  grid-area: doble-americana;
+}
+
+.menuContainter__triple-americana {
+  grid-area: triple-americana;
+}
+
+.menuContainter__hamburguesas-triple {
+  grid-area: hamburguesas-triple;
+  justify-self: start;
+}
+
+.menuContainter__simple-triple {
+  grid-area: simple-triple;
+}
+
+.menuContainter__doble-triple {
+  grid-area: doble-triple;
+}
+
+.menuContainter__triple-triple {
+  grid-area: triple-triple;
+}
+
+.menuContainter__info {
+  grid-area: info;
+}
+
+/* ----- styles local -----*/
+#principalLocal {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#principalLocal h2 {
+  margin: 20px;
+}
+#principalLocal iframe {
+  margin: 20px;
+}
+#principalLocal p {
+  margin: 20px;
+}
+
+/* ----- styles contactanos -----*/
+#principalContacto {
+  margin: 30px;
+  text-align: center;
+}
+#principalContacto fieldset {
+  padding: 30px;
+}
+#principalContacto fieldset legend {
+  font-size: 30px;
+  font-weight: bold;
+}
+#principalContacto fieldset h3 {
+  margin-bottom: 30px;
+}
+
+input[type=text], [type=email], select {
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #198754;
+  font-weight: bold;
+  color: white;
+  padding: 10px 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #dc3545;
+  font-weight: bold;
+  color: white;
+  padding: 10px 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#formulario fieldset p {
+  margin: 10px;
+}
+#formulario div {
+  margin: 10px;
+}
+#formulario img {
+  margin-top: 30px;
+  animation-duration: 1s;
+  animation-name: rotar;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/*---- queries ----*/
+@media (max-width: 600px) {
+  .allSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__backgroundImg {
+    height: 37.15vh;
+    background-image: url(../img/hamburguesaMobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0px;
+  }
+
+  .main__titles {
+    display: none;
+  }
+
+  #primaryHome {
+    background: #e6e6d8 url("https://dl.dropboxusercontent.com/s/t0gu051d08sei65/bg-retro-noise.png");
+    color: #121212;
+    height: 30vh;
+    width: auto;
+    background-color: white;
+    color: black;
+    font: bold;
+    text-align: center;
+  }
+  #primaryHome h2:before, #primaryHome h2:after {
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

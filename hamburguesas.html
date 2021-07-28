@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirador Hamburguesería</title>
+
+    <!--Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--CSS only -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/7d4193cf05.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo-blanco.png" alt="" width="50" height="auto"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="hamburguesas.html">Hamburguesas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="local.html">Local</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="contacto.html">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-warning nav__btn" aria-current="page" href="#">Carrito 🛒</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+    </header>
+
+    <div id="principalHamburguesas">
+        <div class="titulo-hamburguesas titulos-sections">
+            <h2>Nuestras hamburguesas</h2>
+        </div>
+        <!- </div>
+            <div class="hamburguesas">
+                <div class="hamburguesas-contenedor">
+                    <div class="cards">
+                        <img class="cards__img" src="./img/Americana.jpg" alt="Hamburguesa">
+                        <div class="cards__text">
+                            <br>
+                            <h4>Doble Cuarto</h4>
+                            <br>
+                            <p>¡La hamburguesa más conocida del mundo! No hay misterio!</p>
+                            <br>
+                            <ul>
+                                <li>Doble carne de 110grs</li>
+                                <li>Triple Cheddar</li>
+                                <li>Mostaza</li>
+                                <li>Ketchup</li>
+                                <li>Cebolla brunoise</li>
+                            </ul>
+                            <br>
+                            <p>
+                                $ 350
+                            </p>
+                            <br>
+                            <button class="cards__btn">Pedir</button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img class="cards__img" src="./img/BlueOnion.jpg" alt="Hamburguesa">
+                        <div class="cards__text">
+                            <br>
+                            <h4>Blue Onion Burger</h4>
+                            <br>
+                            <p>Una gran combinación de sabores, fuertes y presentes.</p>
+                            <br>
+                            <ul>
+                                <li>Doble carne de 110grs</li>
+                                <li>Queso Azul</li>
+                                <li>Cebolla caramelizada</li>
+                                <li>Rúcula</li>
+                                <li>Pan de papa</li>
+                            </ul>
+                            <br>
+                            <p>
+                                $ 350
+                            </p>
+                            <br>
+                            <button class="cards__btn">Pedir</button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img class="cards__img" src="./img/Cheese.jpg" alt="Hamburguesa">
+                        <div class="cards__text">
+                            <br>
+                            <h4>Cheese Burger</h4>
+                            <br>
+                            <p>Es un postrecito ¡Como si fuese un alfajor! Fácil de agarrar, fácil de morder.</p>
+                            <br>
+                            <ul>
+                                <li>Pan de papa</li>
+                                <li>Carne de 110grs</li>
+                                <li>Doble Cheddar</li>
+                            </ul>
+                            <br>
+                            <p>
+                                $ 350
+                            </p>
+                            <br>
+                            <button class="cards__btn">Pedir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+<!-- Hamburguesas boostrap
+    <div class="container">
+        <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
+
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-transparent" style="width: 18rem;" data-id="1">
+                    <div class="text-center">
+                        <img src="img/Americana.jpg" class="card-img-top cards__img" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Doble Cuarto</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <input type="number" class="card-text center cantidad inputsClass" value=1>
+                        <p class="card-text precio">$ <span class="importe">100</span></p>
+                        <button class="btn btn-warning btnComprar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-transparent" style="width: 18rem;" data-id="2">
+                    <div class="text-center">
+                        <img src="img/BlueOnion.jpg" class="card-img-top cards__img" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Blue onion Burguer</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <input type="number" class="card-text center cantidad inputsClass" value=1>
+                        <p class="card-text precio">$ <span class="importe">150</span></p>
+                        <button class="btn btn-warning btnComprar">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-center">
+                <div class="card bg-transparent" style="width: 18rem;" data-id="3">
+                    <div class="text-center">
+                        <img src="img/Cheese.jpg" class="card-img-top cards__img" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Cheese Burger</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <input type="number" class="card-text center cantidad inputsClass" value=1>
+                        <p class="card-text precio">$ <span class="importe">100</span></p>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-warning btnComprar">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Designed by Juan Cruz Sosa</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-light text-decoration-none me-3" href="#!">Políticas</a>
+                    <a class="link-light text-decoration-none" href="#!">Términos</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap  JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+54926137335", // WhatsApp number
+                call_to_action: "Envíanos un mensaje", // Call to action
+                position: "right", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+</body>
+
+</html>

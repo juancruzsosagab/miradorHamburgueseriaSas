@@ -1,0 +1,73 @@
+/* ----- styles contactanos -----*/
+$mainPx:5px;
+
+
+#principalContacto{
+    margin: $mainPx*6;
+    text-align: center;
+    fieldset{
+        padding: $mainPx*6;
+        legend{
+            font-size: $mainPx*6;
+            font-weight: bold;
+        }
+        h3{
+            margin-bottom: $mainPx*6;
+        }   
+      }
+  }
+  
+ 
+  input[type=text], [type=email], select {
+    padding: 8px ($mainPx*3)+1;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    background-color: #198754;
+    font-weight: bold;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=reset] {
+    background-color: #dc3545;
+    font-weight: bold;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #formulario{
+        fieldset p{
+            margin: $mainPx*2;
+        }
+        div{
+            margin: $mainPx*2;
+        }
+        img{
+            margin-top: $mainPx*6;
+            animation-duration: 1s;
+            animation-name: rotar;
+            animation-iteration-count: infinite;
+        }
+} 
+
+@keyframes rotar {
+    from {
+      transform: rotate(0deg);
+  }
+    to {
+      transform: rotate(359deg);
+  }
+  }

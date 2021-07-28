@@ -1,0 +1,43 @@
+/* ----- footer-----*/
+
+//Variables
+
+$orange:#ab6412;
+$black:black;
+
+
+footer{
+    box-shadow: 0px 0px 10px gray; 
+    text-align: center;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  
+  }
+  
+  .btn-social:hover {
+    background-color: $orange;
+  }
+  
+  /* ----- útiles-----*/
+  
+  .center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+  }
+  
+  .font-orange{
+    color: $orange !important;
+    font-weight: bold;
+  }
+  .font-black{
+    color: $black !important;
+  }
+  .fondo-estrellas{
+    background-image: url("../img/fondo-menu.png");
+  }
+  
+  .font-underline{
+    text-decoration: underline;
+  }

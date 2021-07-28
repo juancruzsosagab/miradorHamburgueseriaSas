@@ -1,0 +1,82 @@
+// Variables
+
+$marginStandard: 20px;
+$displayFlex:flex;
+
+@mixin displayAndDirection ($display,$direction)  {
+  display: $display;
+  flex-direction: $direction;
+}
+
+@mixin justifyAndAlign ($justify,$align)  {
+  justify-content: $justify;
+  align-items: $align;
+}
+/* ----- styles hamburguesas -----*/
+
+
+#principalHamburguesas{
+  margin: $marginStandard;
+  @include displayAndDirection ($displayFlex,column);
+}
+
+
+ .titulo-hamburguesas{
+   display: $displayFlex;
+   justify-content: center;
+   margin: $marginStandard;
+ }
+ .hamburguesas-contenedor{
+   display: $displayFlex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin-top: $marginStandard;
+   margin-bottom: $marginStandard;
+ }
+ 
+ .cards {
+  @include displayAndDirection ($displayFlex,column);
+  @include justifyAndAlign (center,center);
+   width: 300px;
+   height: auto;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   border-radius: 5px;
+   border-style: solid;
+   padding: 10px;
+  }
+ 
+ .cards__img {
+   width: 80%;
+   height: auto;
+   border-radius: 5px 5px 0 0;
+   transition: all 2s;
+    &:hover{
+      width: 100%;
+      height: auto;
+    }
+ }
+ 
+.cards__text {
+  @include displayAndDirection ($displayFlex,column);
+  @include justifyAndAlign (center,center);
+   padding: 2px 16px;
+   line-height: 20px;
+      li{
+      list-style-type: none;   
+ }
+ }
+
+ .cards__btn{
+   font-weight: bold;
+   font-size: 1rem;
+   background: orange;
+   border: none;
+   outline: none;
+   border-radius: 0.2rem;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+    &:hover{
+      background: #ab6412;
+    }    
+ }
+ 

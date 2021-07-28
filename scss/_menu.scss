@@ -1,0 +1,120 @@
+/* ----- styles menú -----*/
+
+#principalMenu{
+    margin: 30px;
+        h2{
+            margin: 20px;
+            text-align: center;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+        ul{
+            list-style-type: none;
+        }
+ } 
+
+  #hambur-menu{
+    width: auto;
+    height: 200px;
+  }
+  
+  .menuContainter {
+    display: grid;
+    grid-template-areas: 
+    "imagen imagen imagen imagen"
+    "hamburguesas simple doble triple"
+    "hamburguesas-cheese simple-cheese doble-cheese triple-cheese"
+    "hamburguesas-americana simple-americana doble-americana triple-americana" 
+    "hamburguesas-triple simple-triple doble-triple triple-triple"
+    "info info info info";
+    grid-template-rows: 300px 50px 100px 100px 100px 200px;
+    grid-template-columns: 40% 20% 20% 20%;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .menuContainter__img {
+    grid-area: imagen;
+    justify-self: center;
+  }
+  
+  .menuContainter__hamburguesas {
+    grid-area: hamburguesas;
+    justify-self: start;
+  }
+  
+  .menuContainter__simple {
+    grid-area: simple;
+  }
+  
+  .menuContainter__doble {
+    grid-area: doble;
+  }
+  
+  .menuContainter__triple {
+    grid-area: triple;
+  }
+  
+  .menuContainter__hamburguesas-cheese {
+    grid-area: hamburguesas-cheese;
+    justify-self: start;
+  }
+  
+  .menuContainter__simple-cheese {
+    grid-area: simple-cheese;
+  }
+  
+  .menuContainter__doble-cheese {
+    grid-area: doble-cheese;
+  }
+  
+  .menuContainter__triple-cheese {
+    grid-area: triple-cheese;
+  }
+  
+  .menuContainter__hamburguesas-americana {
+    grid-area: hamburguesas-americana;
+    justify-self: start;
+  }
+  
+  .menuContainter__simple-americana {
+    grid-area: simple-americana;
+  }
+  
+  .menuContainter__doble-americana{
+    grid-area: doble-americana;
+  }
+  
+  .menuContainter__triple-americana{
+    grid-area: triple-americana;
+  }
+  
+  .menuContainter__hamburguesas-triple {
+    grid-area: hamburguesas-triple;
+    justify-self: start;
+  }
+  
+  .menuContainter__simple-triple {
+    grid-area: simple-triple;
+  }
+  
+  .menuContainter__doble-triple{
+    grid-area: doble-triple;
+  }
+  
+  .menuContainter__triple-triple{
+    grid-area: triple-triple;
+  }
+  .menuContainter__info{
+    grid-area: info;
+  
+  }
+  
